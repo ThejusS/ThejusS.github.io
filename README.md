@@ -1,2 +1,2 @@
-# ThejusS.github.io
-Personal website
+# Thejus
+Personal Website 
