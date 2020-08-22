@@ -153,9 +153,20 @@ nav{
     z-index: 1;
 }
 
+.logoText{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    padding-top: 1.5%;
+    padding-left: 5%;
+    /* background: #000; */
+}
+
+
 .nav-links{
     display: flex;
     list-style: none;
+    margin-top: -4.5%;
     width: 50%;
     height: 100%;
     justify-content: space-around;
