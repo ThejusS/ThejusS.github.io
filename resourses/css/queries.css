@@ -1,0 +1,158 @@
+/* Big tablet to 1200px */
+@media only screen and (max-width: 1200px){
+    .headingBox{
+        position: absolute;
+        width: 100%;
+        padding: 0 2%;
+        top: 50%;
+        left: 60%;
+        -webkit-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+        
+    }
+    
+    .row{ padding: 0 2%; }
+}
+
+
+/* small tablet to big tablets: 768px to 1023px */
+@media only screen and (max-width: 1023px){
+    header{
+        background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/BANNER.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/BANNER.jpg);
+    }
+    
+    h1{
+        color: #fff;
+    }
+    
+    .subHeading{ color: #fff; }
+    
+    
+}
+
+
+/* small phones to tablets: 480 to 900px */
+@media only screen and (max-width: 900px){
+    .whoamiImg {
+    height: 350px;
+    width: auto;
+    
+    }
+    
+}
+
+/* small phones to tablets: 480 to 768px */
+@media only screen and (max-width: 768px){
+    .whoamiImg {
+    height: 300px;
+    width: auto;
+    
+    }
+
+    .line{
+        width: 30px;
+        height: 3px;
+        background: #000;
+        margin: 5px;
+    }
+
+    nav {
+        position: relative,sticky;
+    }
+
+    .hamburger{
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%,-50%);
+        z-index: 2;
+    }
+    
+    .nav-links{
+        position: fixed;
+        background: #fff;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        /* display: none; */
+        z-index: 1;
+        clip-path: circle(100px at 90% -18%);
+        -webkit-clip-path: circle(100px at 90% -18%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+    }
+
+    .nav-links.open{
+        clip-path: circle(1000px at 90% -18%);
+        -webkit-clip-path: circle(1000px at 90% -18%);
+        pointer-events: all;
+    }
+
+    .nav-links li a{
+        padding: 0;
+    }
+
+    /* .nav-links li{
+        opacity: 0;
+    }
+    
+    .nav-links li:nth-child(1){
+        transition: all 0.5s ease 0.2s;
+    }
+    .nav-links li:nth-child(2){
+        transition: all 0.5s ease 0.4s;
+    }
+    .nav-links li:nth-child(3){
+        transition: all 0.5s ease 0.6s;
+    }
+    .nav-links li:nth-child(4){
+        transition: all 0.5s ease 0.8s;
+    }
+
+    .nav-links li.fade{
+        opacity: 1;
+    } */
+     
+}
+
+
+/* small phones: 0 to 480px */
+@media only screen and (max-width: 480px){
+    
+    .headingBox{
+        width: 70%;
+        padding: 0 0.5%;
+        left: 50%;
+    }
+    
+    h1{
+        font-size: 200%;
+    }
+    
+    .whoami{
+        text-align: center;
+        padding: 0 5%;
+    }
+    
+    h2:after {
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    
+    h2 {
+        margin-top: 30px;
+    }
+    
+    .whoamiImg{
+       padding-left: 10%;
+    }
+    
+    
+}
+
+
+
+
+
