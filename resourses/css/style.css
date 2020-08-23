@@ -97,7 +97,8 @@ h3{
 
 /*-- BUTTONS --*/
 .btn:link,
-.btn:visited{
+.btn:visited,
+input[type=submit]{
     display: inline-block;
     padding: 10px 30px;
     font-weight: 300px;
@@ -108,10 +109,11 @@ h3{
 }
 
 .btn-full:link,
-.btn-full:visited{
+.btn-full:visited,
+input[type=submit]{
     background-color: #c4184b;
     border: 1px solid #c4184b;
-    color: #000;
+    color: #fff;
 }
 
 .btn-ghost:link,
@@ -122,7 +124,9 @@ h3{
 
 
 .btn:hover,
-.btn:active{
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active{
     background-color: #c4184b;
 }
 
@@ -189,11 +193,15 @@ nav{
 }
 
 .nav-links li a:hover,
-.nav-links li a:active{
+.nav-links li a:active,
+.active{
     border-bottom: 2px solid #c4184b;
 }
 
 
+/* ------------------------------------------------------------------------------ */
+/* -----------------------------  HOME PAGE ------------------------------------- */
+/* ------------------------------------------------------------------------------ */
 
 
 /* -------------------------------- */
@@ -345,6 +353,33 @@ footer {
     font-size: 90%;
 }
 
+/* ------------------------------------------------------------------------------ */
+/* ---------------------------  CONTACT PAGE ------------------------------------ */
+/* ------------------------------------------------------------------------------ */
+/* .form{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(img/BANNER.jpg);
+    background-position: center;
+    background-size: cover;
+} */
+.contactForm{
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+textarea{
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+textarea{
+    height: 100px;
+}
+
+*:focus {outline: none;}
 
 
 
