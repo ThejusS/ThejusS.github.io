@@ -50,7 +50,9 @@
       <h2 class="centeredH2">Happy to hear from you</h2>
     </div>
     <div class="row paddingRow">
-      <form method="post" action="#" class="contactForm">
+      
+      <!-- Form starts here -->
+      <form method="post" action="resourses/process.php" class="contactForm">
         <div class="row">
           <div class="col span-1-of-3 paddingCol">
             <label for="name">Name</label>
@@ -83,7 +85,8 @@
             <label>&nbsp;</label>
           </div>
           <div class="col span-2-of-3">
-            <input type="submit" value="Send">
+            <!-- <input type="submit" name="btnSend" value="Send"> -->
+            <button class="btn" name="btnSend">Send</button>
           </div>
         </div>
 
