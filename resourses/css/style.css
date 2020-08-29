@@ -334,7 +334,7 @@ footer {
     margin-right: 20px;
 }
 
-.socialLinks li a:link,
+/* .socialLinks li a:link,
 .socialLinks li a:visited{
     text-decoration: none;
     border: 0;
@@ -346,6 +346,55 @@ footer {
 .socialLinks li a:hover,
 .socialLinks li a:active{
     color: #c4184b;
+} */
+
+.socialLinks li a{
+    display: flex;
+    background: rgb(95, 95, 95);
+    height: 35px;
+    width: 35px;
+    margin: 0 2px;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 3px 3px 5px -1px rgba(0, 0, 0, 0.603),
+    -3px -3px 5px -1px rgba(255, 255, 255, 0);
+    border: 1px solid rgba(0,0,0,0);
+    transition: transform 0.2s;
+
+}
+.socialLinks li a i{
+    font-size: 50;
+    color: rgb(197, 197, 197);
+    transition: transform 0.2s;
+}
+
+.socialLinks li a:hover{
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.363),
+    inset -4px -4px 6px -1px rgba(255, 255, 255, 0.288),
+    -0.5px -0.5px 0px #464648,
+    0.5px 0.5px 0px rgba(0, 0, 0, 0.363),
+    0px 12px 10px -10px rgba(0, 0, 0, 0.493);
+
+    border: 1px solid rgba(0,0,0,0.01);
+    transform: translateY(2px);
+}
+.socialLinks li a i:hover{
+    transform: scale(0.90);
+}
+
+.socialLinks li a:hover .ion-social-facebook{
+    color: #3b5998;
+}
+.socialLinks li a:hover .ion-social-instagram{
+    color: #f14843;
+}
+.socialLinks li a:hover .ion-social-linkedin{
+    color: #00acee;
+}
+.socialLinks li a:hover .ion-social-youtube{
+    color: #f00;
 }
 
 .copyright {
@@ -365,21 +414,43 @@ footer {
     width: 60%;
     margin: 0 auto;
 }
+::placeholder {
+  color: #ccc;
+  opacity: 1; /* Firefox */
+}
 
 input[type=text],
 input[type=email],
 textarea{
     width: 100%;
     padding: 7px;
-    border-radius: 3px;
+    border-radius: 5px;
     border: 1px solid #ccc;
 }
 
 textarea{
     height: 100px;
 }
+input[type=text],
+input[type=email]{
+    height: 50px;
+}
 
 *:focus {outline: none;}
 
 
 
+/*     */
+.field{
+    margin: 20px 0;
+}
+
+input{
+    background-color: rgb(252, 252, 250);
+    box-shadow: 3px 3px 10px -1px #d6d6d6;
+}
+
+textarea{
+    background-color: rgb(252, 252, 252);
+    box-shadow: 6px 6px 10px -1px #d6d6d6;
+}
