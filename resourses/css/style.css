@@ -18,12 +18,71 @@ html {
     text-rendering: optimizeLegibility;
 }
 
+/* Hide scrollbar */
+::-webkit-scrollbar{
+    width: 0px;
+    background: transparent;
+}
+
 
 
 /* -------------------------------- */
 /* REUSEABLE COMPONENTS */
 /* -------------------------------- */
 
+/********* preloader *******/
+.loader_bg{
+    position: fixed;
+    z-index: 999999;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+.loader{
+    border: 0 solid transparent;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: calc(50vh - 75px);
+    left: calc(50vw - 75px);
+}
+
+.loader:before,
+.loader:after{
+    content: "";
+    border: 1em solid #ff5733;
+    border-radius: 50%;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: loader 2s linear infinite;
+    opacity: 0;
+}
+
+.loader:before{
+    animation-delay: 0.5s;
+}
+
+@keyframes loader{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+
+/**************************/
 .row {
     max-width: 1140px;
     margin: 0 auto;
@@ -100,10 +159,11 @@ h3{
 .btn:visited,
 input[type=submit]{
     display: inline-block;
-    padding: 10px 30px;
+    padding: 12px 30px;
     font-weight: 300px;
     text-decoration: none;
     border-radius: 5px;
+    font-size: 80%;
     -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
     transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
@@ -193,8 +253,7 @@ nav{
 }
 
 .nav-links li a:hover,
-.nav-links li a:active,
-.active{
+.nav-links li a:active{
     border-bottom: 2px solid #c4184b;
 }
 
@@ -454,3 +513,182 @@ textarea{
     background-color: rgb(252, 252, 252);
     box-shadow: 6px 6px 10px -1px #d6d6d6;
 }
+
+
+/* ------------------------------------------------------------------------------ */
+/* ---------------------------  PROJECTS PAGE ----------------------------------- */
+/* ------------------------------------------------------------------------------ */
+.mobileviewSection{display: none;}
+/* .webviewSection{display: none;} */
+
+.projectSection{
+    height: 90vh;
+    /* background: #00acee; */
+}
+.projectCard,
+.projectCardM{
+    /* background: #343464; */
+    box-shadow: 3px 3px 5px -1px rgba(59, 59, 59, 0.603),
+    -3px -3px 5px -1px rgba(219, 219, 219, 0);
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.mainDisplay{
+    /* background: #ccc; */
+    text-align: center;
+    padding: 20px;
+}
+.mainDisplay p{
+    margin: 20px;
+
+}
+.cardLogos{
+    margin-top: 15px;
+    margin-left: 30px;
+    height: 30px;
+    width: auto;
+    float: left;
+}
+.displayLogos{
+    height: 100px;
+    width: auto;
+    align-self: center;
+}
+
+
+.projectText{
+    /* float: right; */
+    margin-left: 20%;
+}
+
+.innerScroll{
+    /* background-color: #c4184b; */
+    /* box-shadow: inset 2px 2px 10px -1px rgba(102, 102, 102, 0.363),
+    inset -2px -2px 10px -1px rgba(206, 206, 206, 0.288); */
+    width: 100%;
+    height: 365px;
+    padding: 10px;
+    overflow: auto;
+}
+
+.projectCard:hover{
+    transform: scale(1.05);
+    box-shadow: 6px 6px 10px -1px rgba(59, 59, 59, 0.603),
+    -6px -6px 10px -1px rgba(219, 219, 219, 0);
+}
+.projectCardM:hover{
+    transform: scale(1.05);
+    box-shadow: 6px 6px 10px -1px rgba(59, 59, 59, 0.603),
+    -6px -6px 10px -1px rgba(219, 219, 219, 0);
+}
+
+/* .scrollContent{
+    height: 2224px;
+    overflow-y: scroll;
+    background: #ccc;
+} */
+
+.project-links{
+    /* background: #00acee; */
+    display: flex;
+    list-style: none;
+    /* margin-top: -4.5%; */
+    width: 50%;
+    height: 100%;
+    
+    align-items: center;
+    margin-right: auto;
+    margin-left: 10%;
+    margin-bottom: 20px;
+}
+
+.project-links li{
+     padding: 2% 12%; 
+     cursor: pointer;
+     transition: all 0.2s ease;
+}
+.project-links li:link,
+.project-links li:visited,
+.project-linksM li:link,
+.project-linksM li:visited{
+    color: #464648;
+    text-decoration: none;
+    font-size: 90%;
+    /* border-bottom: 2px solid transparent; */
+    background-color: transparent;
+    
+}
+
+.project-links li:hover,
+.project-links li:active,
+.project-linksM li:hover,
+.project-linksM li:active{
+    /* border-bottom: 2px solid #c4184b; */
+    background-color: #c4184b;
+    color: #fff;
+}
+
+.active{
+     background-color: #c4184b;
+     color: #fff;
+}
+
+.dataSheet{
+    display: none;
+}
+
+/* 
+nav{
+    position: sticky;
+    top: 0;
+    height: 10vh;
+    background: rgba(255, 255, 255, 0.966);
+    z-index: 1;
+}
+
+.logoText{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    padding-top: 1.5%;
+    padding-left: 5%;
+    z-index: 3;
+    
+}
+
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    margin-top: -4.5%;
+    width: 50%;
+    height: 100%;
+    
+    align-items: center;
+    margin-left: auto;
+}
+
+.nav-links li{
+     padding: 0 7%; 
+}
+.nav-links li a:link,
+.nav-links li a:visited{
+    color: #464648;
+    text-decoration: none;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-links li a:hover,
+.nav-links li a:active,
+.active{
+    border-bottom: 2px solid #c4184b;
+} */
+
+

@@ -138,6 +138,16 @@
     .field{
         margin: 20px -20px !important; 
     }
+    input[type=submit]{
+        width: 100%;
+    }
+
+    /*-----------*/
+    /* Projects- */
+    /*-----------*/
+
+    .mobileviewSection{display: block;}
+    .webviewSection{display: none;}
 
 }
 
