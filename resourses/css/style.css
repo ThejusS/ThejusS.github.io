@@ -609,6 +609,7 @@ textarea{
 
 .project-links li{
      padding: 2% 12%; 
+     
      cursor: pointer;
      transition: all 0.2s ease;
 }
