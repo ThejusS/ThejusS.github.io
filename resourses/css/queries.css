@@ -149,6 +149,14 @@
     .mobileviewSection{display: block;}
     .webviewSection{display: none;}
 
+    .project-linksM li{
+        padding: 2% 10%;
+    }
+
+    .projectCardM:last-child{
+        margin-bottom: 5px;
+    }
+
 }
 
 

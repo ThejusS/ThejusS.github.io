@@ -84,6 +84,31 @@ $(document).ready(function(){
     })
   }
 
+  // Element filter in projects page Mobile view
+  const buttonsMobile = document.querySelector(".project-linksM").children;
+  const itemsMobile = document.querySelector(".scrollContentM").children;
+
+  for (let i = 0; i < buttonsMobile.length; i++) {
+    buttonsMobile[i].addEventListener("click", function () {
+      for (let j = 0; j < buttonsMobile.length; j++) {
+        buttonsMobile[j].classList.remove("active");
+      }
+      this.classList.add("active");
+      const target = this.getAttribute("data-target");
+
+      for (let k = 0; k < itemsMobile.length; k++) {
+        itemsMobile[k].style.display = "none";
+
+        if (items[k].getAttribute("data-id") == target) {
+          itemsMobile[k].style.display = "block";
+        }
+        if (target == "all") {
+          itemsMobile[k].style.display = "block";
+        }
+      }
+    })
+  }
+
   // Specific project display
   const cards = document.querySelector(".scrollContent").children;
   const displayItems = document.querySelector(".mainDisplay").children;

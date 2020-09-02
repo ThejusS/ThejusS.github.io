@@ -566,7 +566,8 @@ textarea{
     margin-left: 20%;
 }
 
-.innerScroll{
+.innerScroll,
+.innerScrollMobile{
     /* background-color: #c4184b; */
     /* box-shadow: inset 2px 2px 10px -1px rgba(102, 102, 102, 0.363),
     inset -2px -2px 10px -1px rgba(206, 206, 206, 0.288); */
@@ -574,6 +575,10 @@ textarea{
     height: 365px;
     padding: 10px;
     overflow: auto;
+}
+
+.innerScrollMobile{
+    height: 450px !important;
 }
 
 .projectCard:hover{
@@ -593,7 +598,8 @@ textarea{
     background: #ccc;
 } */
 
-.project-links{
+.project-links,
+.project-linksM{
     /* background: #00acee; */
     display: flex;
     list-style: none;
@@ -607,12 +613,15 @@ textarea{
     margin-bottom: 20px;
 }
 
-.project-links li{
+.project-links li,
+.project-linksM li{
      padding: 2% 12%; 
-     
      cursor: pointer;
      transition: all 0.2s ease;
 }
+
+
+
 .project-links li:link,
 .project-links li:visited,
 .project-linksM li:link,
