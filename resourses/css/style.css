@@ -660,6 +660,13 @@ textarea{
     display: none;
 }
 
+.headText{
+    font-weight: 500;
+}
+.cardLabel{
+    display: none;
+}
+
 
 
 /* ------------------------------------------------------------------------------ */
