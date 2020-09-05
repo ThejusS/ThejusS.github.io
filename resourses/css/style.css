@@ -525,11 +525,18 @@ textarea{
     height: 90vh;
     /* background: #00acee; */
 }
-.projectCard,
-.projectCardM{
+.projectCard{
     /* background: #343464; */
     box-shadow: 3px 3px 5px -1px rgba(59, 59, 59, 0.603),
     -3px -3px 5px -1px rgba(219, 219, 219, 0);
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.projectCardM{
     border-radius: 8px;
     padding: 10px;
     margin: 10px;
@@ -587,9 +594,10 @@ textarea{
     -6px -6px 10px -1px rgba(219, 219, 219, 0);
 }
 .projectCardM:hover{
-    transform: scale(1.05);
+    /* transform: scale(1.05);
     box-shadow: 6px 6px 10px -1px rgba(59, 59, 59, 0.603),
-    -6px -6px 10px -1px rgba(219, 219, 219, 0);
+    -6px -6px 10px -1px rgba(219, 219, 219, 0); */
+    background: #ece9e9;
 }
 
 /* .scrollContent{
@@ -652,53 +660,22 @@ textarea{
     display: none;
 }
 
-/* 
-nav{
-    position: sticky;
-    top: 0;
-    height: 10vh;
-    background: rgba(255, 255, 255, 0.966);
-    z-index: 1;
+
+
+/* ------------------------------------------------------------------------------ */
+/* ---------------------------  Maintanance PAGE ----------------------------------- */
+/* ------------------------------------------------------------------------------ */
+.maintananceSection{
+    text-align: center;
 }
 
-.logoText{
-    display: flex;
-    width: 50%;
-    height: 100%;
-    padding-top: 1.5%;
-    padding-left: 5%;
-    z-index: 3;
+.maintananceSection p {
+    text-align: center;
+}
+
+.maintananceSection img{
+    width: 100px;
+    height: auto;
+    margin-bottom: 30px;
     
 }
-
-
-.nav-links{
-    display: flex;
-    list-style: none;
-    margin-top: -4.5%;
-    width: 50%;
-    height: 100%;
-    
-    align-items: center;
-    margin-left: auto;
-}
-
-.nav-links li{
-     padding: 0 7%; 
-}
-.nav-links li a:link,
-.nav-links li a:visited{
-    color: #464648;
-    text-decoration: none;
-    font-size: 90%;
-    border-bottom: 2px solid transparent;
-    transition: border-bottom 0.5s;
-}
-
-.nav-links li a:hover,
-.nav-links li a:active,
-.active{
-    border-bottom: 2px solid #c4184b;
-} */
-
-

@@ -153,8 +153,23 @@
         padding: 2% 10%;
     }
 
+    .projectCardM .projectText{
+        margin-left: 35%;
+    }
+
+    .project-linksM{
+        margin-left: 5%;
+    }
+
     .projectCardM:last-child{
         margin-bottom: 5px;
+    }
+
+    .cardLogos{
+        margin-left: 0px;
+    }
+    .projectText{
+        margin-left: 25% !important;
     }
 
 }

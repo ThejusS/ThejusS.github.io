@@ -129,6 +129,35 @@ $(document).ready(function(){
     })
   }
 
+  // Mobile card effects
+  
+  const narrator = document.querySelector(".scrollContentM .card1");
+  const genmythra = document.querySelector(".scrollContentM .card2");
+  const insta = document.querySelector(".scrollContentM .card4");
+  const keylogger = document.querySelector(".scrollContentM .card5");
+  const iste = document.querySelector(".scrollContentM .card3");
+  const snakes = document.querySelector(".scrollContentM .card6");
+  // const narrator = document.querySelector(".scrollContentM .card1");
+  // const narrator = document.querySelector(".scrollContentM .card1");
+
+  narrator.addEventListener("click", function(){
+    window.open("../../maintanance.html","_blank")
+  })
+  genmythra.addEventListener("click", function () {
+    window.open("../../maintanance.html", "_blank")
+  })
+  insta.addEventListener("click", function () {
+    window.open("../../maintanance.html", "_blank")
+  })
+  iste.addEventListener("click", function () {
+    window.open("../../maintanance.html", "_blank")
+  })
+  keylogger.addEventListener("click", function () {
+    window.open("../../maintanance.html", "_blank")
+  })
+  snakes.addEventListener("click", function () {
+    window.open("../../maintanance.html", "_blank")
+  })
 
 
 });
