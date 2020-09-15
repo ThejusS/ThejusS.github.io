@@ -113,7 +113,7 @@ h2{
 h2:after{
     display: block;
     height: 2px;
-    background-color: #c4184b;
+    background-color: #6c63ff;
     content: " ";
     width: 100px;
     margin-top: 30px;
@@ -125,7 +125,7 @@ h2:after{
 .centeredH2:after{
     display: block;
     height: 2px;
-    background-color: #c4184b;
+    background-color: #6c63ff;
     content: " ";
     width: 100px;
     margin: 0 auto;
@@ -171,15 +171,15 @@ input[type=submit]{
 .btn-full:link,
 .btn-full:visited,
 input[type=submit]{
-    background-color: #c4184b;
-    border: 1px solid #c4184b;
+    background-color: #6c63ff;
+    border: 1px solid #6c63ff;
     color: #fff;
 }
 
 .btn-ghost:link,
 .btn-ghost:visited{
-    border: 1px solid #c4184b;
-    color: #c4184b;
+    border: 1px solid #6c63ff;
+    color: #6c63ff;
 }
 
 
@@ -187,17 +187,17 @@ input[type=submit]{
 .btn:active,
 input[type=submit]:hover,
 input[type=submit]:active{
-    background-color: #c4184b;
+    background-color: #b0a4da;
 }
 
 .btn-full:hover,
 .btn-full:active{
-    border: 1px solid #c4184b;
+    border: 1px solid #b0a4da;
 }
 
 .btn-ghost:hover,
 .btn-ghost:active{
-    border: 1px solid #c4184b;
+    border: 1px solid #b0a4da;
     color: #fff;
 }
 
@@ -254,7 +254,7 @@ nav{
 
 .nav-links li a:hover,
 .nav-links li a:active{
-    border-bottom: 2px solid #c4184b;
+    border-bottom: 2px solid #6c63ff;
 }
 
 
@@ -270,7 +270,7 @@ nav{
 header {
 /*    background-color: #c3c1c1;*/
 /*    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero-min.jpg);*/
-    background-image: url(img/BANNER1.jpg);
+    background-image: url(img/banner2.jpg);
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -359,7 +359,7 @@ header {
 .card:hover h3,
 .card:hover span{
     
-    color: #c4184b;
+    color: #6c63ff;
 }
 
 
@@ -404,7 +404,7 @@ footer {
 
 .socialLinks li a:hover,
 .socialLinks li a:active{
-    color: #c4184b;
+    color: #6c63ff;
 } */
 
 .socialLinks li a{
@@ -575,7 +575,7 @@ textarea{
 
 .innerScroll,
 .innerScrollMobile{
-    /* background-color: #c4184b; */
+    /* background-color: #6c63ff; */
     /* box-shadow: inset 2px 2px 10px -1px rgba(102, 102, 102, 0.363),
     inset -2px -2px 10px -1px rgba(206, 206, 206, 0.288); */
     width: 100%;
@@ -646,13 +646,13 @@ textarea{
 .project-links li:active,
 .project-linksM li:hover,
 .project-linksM li:active{
-    /* border-bottom: 2px solid #c4184b; */
-    background-color: #c4184b;
+    /* border-bottom: 2px solid #6c63ff; */
+    background-color: #6c63ff;
     color: #fff;
 }
 
 .active{
-     background-color: #c4184b;
+     background-color: #6c63ff;
      color: #fff;
 }
 
